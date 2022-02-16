@@ -1,0 +1,17 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/th2205/monorepo.git",
+  "author": "임태현 <th05662205@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "ui:start" : "yarn workspace react-ui start",
+    "ui:build" : "yarn workspace react-ui build",
+    "app:start" : "yarn workspace app start"
+  },
+  "private": true,
+  "workspaces": [
+    "package/*"
+  ]
+}
